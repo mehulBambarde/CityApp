@@ -1,0 +1,12 @@
+<h2>Add City</h2>
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="city.name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <textarea class="form-control" id="description" [(ngModel)]="city.description" name="description" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

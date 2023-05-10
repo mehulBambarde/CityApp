@@ -1,0 +1,12 @@
+<h2>{{ city.name }}</h2>
+<p>{{ city.description }}</p>
+<app-city-map [latitude]="51.5072" [longitude]="-0.1276"></app-city-map>
+
+<br>
+<br>
+<h3>Points of Interest</h3>
+<ul>
+  <li *ngFor="let poi of pointsOfInterest">
+    {{ poi.name }} - {{ poi.description }}
+  </li>
+</ul>
